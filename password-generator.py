@@ -1,9 +1,9 @@
 from random import choice
 
 print("-----------------------------------------------------------------------------------")
-print("                              Python Password Generator                              ")
+print("                              Python Password Generator                            ")
 print(" ")
-print("      (1) Generate Random Password    (2)  Kullanıcı Girişili Şifre İçin           ")
+print("      (1) Generate Random Password    (2)  Creating a Custom Password              ")
 print("-----------------------------------------------------------------------------------")
 
 password_type_select = int(input())
@@ -16,7 +16,7 @@ numbers = [0,1,2,3,4,5,6,7,8,9]
 char = []
 password_list = []
 password = " "
-
+ 
 if password_type_select == 1:
     print("You Have Chosen To Generate Random Password")
     print("How long is your password?")
@@ -150,3 +150,4 @@ if password_type_select == 2:
 
 
    print(password)
+
