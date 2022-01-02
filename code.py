@@ -6,6 +6,7 @@ print(" ")
 print("      (1) Generate Random Password    (2)  Creating a Custom Password              ")
 print("-----------------------------------------------------------------------------------")
 
+#User entered for password creation selection.
 password_type_select = int(input())
 
 uppercase_and_small_letter = ["A","a","B","b","C","c","D","d","E","e","F","f","G","g","H","h","I","i","J","j","K","k","L","l","M","m","N","n","O","o","P","p","Q","q","R","r","S","s","T","t","U","u","V","v","W","w","X","x","Y","y","Z","z"]
@@ -16,26 +17,30 @@ numbers = [0,1,2,3,4,5,6,7,8,9]
 char = []
 password_list = []
 password = " "
- 
+
+ #User Generate Random Password made selections
 if password_type_select == 1:
     print("You Have Chosen To Generate Random Password")
     print("How long is your password?")
-
+    
+    #Input for how long the password should be.
     password_length = int(input())
 
     print("Would you like to use numbers?")
     print("(1) Yes        (2) No  ")
-
+    
+    #Entered to use numbers or not in the password.
     password_number_random = int(input())
 
     print("Do you want special characters in your password?")
     print("(1) Yes        (2) No  ")
-
+    
+    #We took input to learn whether special characters (such as $, €) should be used.
     password_special_characters_random = int(input())
 
     print("Do you want upper/lowercase letters in your password?")
     print("(1) Only Uppercase Letter  (2) Only Small Letter (3) Uppercase Letter and Small Letter")
-
+    #Choose which letters you want used.
     password_letter_random = int(input())
 
 
@@ -117,19 +122,23 @@ if password_type_select == 1:
 
     print(password)
 
+#User Creating a Custom Password made selections
 if password_type_select == 2:
    print("You have chosen the User Login Password.")
    print("How long should the password be?")
-
+   
+   #Input for how long the password should be.
    password_length = int(input())
 
    print("What letters would you like to use in the password?")
-
+   
+   #We choose which letters to use.
    password_request = str(input())
 
    print("Do you want to use numbers and special characters?")
    print("(1) Yes   (2) No")
-
+   
+   #Choose which special characters to use.
    password_number_special_characters = int(input())
    if password_number_special_characters == 1:
 
