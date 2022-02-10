@@ -144,7 +144,7 @@ if password_type_select == 2:
 
        print("What numbers and special phrases would you like to have in the password?")
 
-       password_number = int(input())
+       password_number = str(input())
 
 
    for i in password_request:
